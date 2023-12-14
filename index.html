@@ -2,24 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBQ guide</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Gênio - Pergunte o que quiser</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>BBQ guide</h1>
-        <input type="number" name="adults" id="adults" placeholder="Adults">
-        <input type="number" name="kids" id="kids" placeholder="kids">
-        <input type="number" name="duration" id="duration" placeholder="Duration">
-        <button onclick="calculate()">Compute</button>
 
-        <div id="result">
+    <header>
+        <h1>GÊNIO</h1>
+        <h2>Pergunte o que quiser</h2>
+    </header>
 
+    <main>
+        <div id="chat-box"></div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Digite sua pergunta...">
+            <button onclick="askQuestion()">Enviar</button>
         </div>
-    </div>
+    </main>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
